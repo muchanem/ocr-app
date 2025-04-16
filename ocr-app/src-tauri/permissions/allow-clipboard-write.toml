@@ -1,0 +1,5 @@
+[[set]]
+identifier = "allow-clipboard-write"
+description = """ This allows writes to the clipboard
+"""
+permissions = ["clipboard-manager:allow-write-text"]

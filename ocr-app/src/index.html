@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>OCR App</title>
+
+        <!-- Icon Font Styles -->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+
+        <!-- Pill Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- App Styles -->
+        <link rel="stylesheet" href="styles.css" />
+
+        <!-- App Logic (deferred) -->
+        <script type="module" src="/main.js" defer></script>
+    </head>
+
+    <body>
+        <!-- Initial View -->
+        <main id="initial-view">
+            <span class="material-symbols-outlined upload-icon"
+                >upload_file</span
+            >
+        </main>
+
+        <!-- File List View (Initially Hidden) -->
+        <div id="file-list-view" class="hidden">
+            <ul id="file-list">
+                <!-- File pills will be dynamically added here -->
+                <!-- Example structure (for reference):
+            <li class="file-pill status-processing" data-filepath="/path/to/some/very/long/filename/that/needs/truncation.pdf">
+                <div class="pill-content">
+                    <span class="filename">truncation.pdf</span>
+                    <div class="pill-actions">
+                        <span class="material-symbols-outlined download-icon">file_download_off</span>
+                        <span class="material-symbols-outlined copy-icon">file_copy_off</span>
+                    </div>
+                </div>
+            </li>
+             -->
+            </ul>
+            <!-- We can add a "Return" button here later -->
+        </div>
+    </body>
+</html>
